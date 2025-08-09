@@ -1,7 +1,33 @@
 [project]
-name = "social"
+name = "social-app"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = []
+
+[tool.uv.workspace]
+members = [
+    ".",
+]
+
+[tool.uv.sources]
+social-app = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "boto3==1.35.36",
+    "dvc[s3]==3.53.0",
+    "flask==3.0.3",
+    "flask-cors==5.0.0",
+    "joblib==1.4.2",
+    "lightgbm==4.5.0",
+    "matplotlib==3.9.2",
+    "mlflow==2.17.0",
+    "nltk==3.9.1",
+    "numpy==2.1.2",
+    "pandas==2.2.3",
+    "seaborn==0.13.2",
+    "social-app",
+    "wordcloud==1.9.3",
+]
