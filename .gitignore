@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# DVC files
+*.dvc
+.cache/
+.dvc/
+.dvc/tmp/
+.dvc/cache/
+.dvc/config.local
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Data folders
+data/raw/
+data/interim/
+data/processed/
+data/external/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Lock files
+*.lock
+
+# Others
+*.sqlite3
+*.db
