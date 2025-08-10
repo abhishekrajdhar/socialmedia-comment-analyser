@@ -43,8 +43,10 @@ data/external/
 Thumbs.db
 
 # Lock files
-*.lock
+#*.lock
 
 # Others
 *.sqlite3
 *.db
+/lgbm_model.pkl
+/tfidf_vectorizer.pkl
